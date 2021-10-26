@@ -1,0 +1,23 @@
+Icon(
+Icons.directions_bike,
+size:200,
+color: Colors.green,
+),
+Image.asset('image/neobk-2349418.jpg',
+),
+
+
+
+ElevatedButton(
+              child: Text(text),
+              onPressed:() async {
+                final result = await  Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => NextPage('道化師'),
+                  ),
+                );
+                text = result;
+                print(result);
+                },
+              ),
